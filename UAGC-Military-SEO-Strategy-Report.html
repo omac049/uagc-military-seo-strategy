@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAGC Military SEO Strategy | 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'uagc-red': '#AB0520',
+                        'uagc-blue': '#0C234B',
+                        'uagc-navy': '#1E3A5F',
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                        'slide-up': 'slideUp 0.5s ease-out',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'gradient': 'gradient 8s ease infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                        'spin-slow': 'spin 8s linear infinite',
+                        'ping-slow': 'ping 2s cubic-bezier(0, 0, 0.2, 1) infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #0C234B, #AB0520); border-radius: 5px; }
+        
+        /* Animated gradient */
+        .gradient-animate {
+            background: linear-gradient(-45deg, #0C234B, #1E3A5F, #AB0520, #0C234B);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* Glassmorphism */
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Card hover */
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        /* Progress animations */
+        .progress-animate {
+            animation: progressFill 1.5s ease-out forwards;
+            transform-origin: left;
+        }
+        @keyframes progressFill {
+            0% { transform: scaleX(0); }
+            100% { transform: scaleX(1); }
+        }
+        
+        /* Reveal animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Counter animation */
+        .counter {
+            display: inline-block;
+        }
+        
+        /* Circular progress */
+        .circular-progress {
+            --size: 120px;
+            --half-size: calc(var(--size) / 2);
+            --stroke-width: 10px;
+            --radius: calc((var(--size) - var(--stroke-width)) / 2);
+            --circumference: calc(var(--radius) * 3.14159 * 2);
+        }
+        .circular-progress circle {
+            stroke-dasharray: var(--circumference);
+            stroke-linecap: round;
+            transition: stroke-dashoffset 1.5s ease-out;
+        }
+        
+        /* Tooltip */
+        .tooltip {
+            position: relative;
+        }
+        .tooltip::after {
+            content: attr(data-tip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-8px);
+            background: #0C234B;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s;
+            z-index: 100;
+        }
+        .tooltip:hover::after {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(-4px);
+        }
+        
+        /* Collapsible sections */
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+        .collapsible-content.expanded {
+            max-height: 2000px;
+        }
+        
+        /* Tab active state */
+        .tab-btn.active {
+            background: #AB0520;
+            color: white;
+            border-color: #AB0520;
+        }
+        
+        /* Stagger children */
+        .stagger-children > * {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .stagger-children.active > *:nth-child(1) { animation: slideUp 0.5s ease-out 0.1s forwards; }
+        .stagger-children.active > *:nth-child(2) { animation: slideUp 0.5s ease-out 0.2s forwards; }
+        .stagger-children.active > *:nth-child(3) { animation: slideUp 0.5s ease-out 0.3s forwards; }
+        .stagger-children.active > *:nth-child(4) { animation: slideUp 0.5s ease-out 0.4s forwards; }
+        .stagger-children.active > *:nth-child(5) { animation: slideUp 0.5s ease-out 0.5s forwards; }
+        .stagger-children.active > *:nth-child(6) { animation: slideUp 0.5s ease-out 0.6s forwards; }
+        @keyframes slideUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Glow effect */
+        .glow {
+            box-shadow: 0 0 30px rgba(171, 5, 32, 0.3);
+        }
+        
+        /* Pulse dot */
+        .pulse-dot {
+            position: relative;
+        }
+        .pulse-dot::before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: #10B981;
+            border-radius: 50%;
+            top: -6px;
+            right: -6px;
+            animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+        }
+        
+        /* Shimmer effect */
+        .shimmer {
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite;
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        .animate-bounce-slow {
+            animation: bounce-slow 2s ease-in-out infinite;
+        }
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700 leading-relaxed">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        
+        <!-- Report Header -->
+        <header class="gradient-animate relative overflow-hidden rounded-3xl mb-10 shadow-2xl">
+            <!-- Animated patterns -->
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute inset-0" style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&quot;);"></div>
+            </div>
+            
+            <!-- Floating elements -->
+            <div class="absolute top-10 right-10 w-32 h-32 bg-white/10 rounded-full blur-3xl animate-float"></div>
+            <div class="absolute bottom-10 left-10 w-24 h-24 bg-white/10 rounded-full blur-2xl animate-float" style="animation-delay: -3s;"></div>
+            <div class="absolute top-1/2 right-1/4 w-16 h-16 bg-white/5 rounded-full blur-xl animate-float" style="animation-delay: -1.5s;"></div>
+            
+            <div class="relative z-10 px-8 py-16 md:px-12 md:py-20 text-white">
+                <div class="animate-fade-in">
+                    <p class="uppercase text-sm md:text-base tracking-[0.2em] text-white/80 mb-4 font-medium">University of Arizona Global Campus</p>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
+                        Military SEO
+                        <span class="block bg-clip-text text-transparent bg-gradient-to-r from-white via-red-200 to-white">Strategy 2026</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-white/90 max-w-2xl mb-8 leading-relaxed">
+                        Capturing <span class="font-bold text-red-200">150,000+ monthly searches</span> from military-connected learners through strategic, search-optimized content.
+                    </p>
+                    
+                    <!-- Quick Stats Row -->
+                    <div class="flex flex-wrap gap-4 mb-6">
+                        <div class="glass px-6 py-4 rounded-2xl backdrop-blur-sm">
+                            <div class="text-3xl font-black">150K+</div>
+                            <div class="text-sm text-white/70">Monthly Searches</div>
+                        </div>
+                        <div class="glass px-6 py-4 rounded-2xl backdrop-blur-sm">
+                            <div class="text-3xl font-black text-emerald-300">Low</div>
+                            <div class="text-sm text-white/70">Competition</div>
+                        </div>
+                        <div class="glass px-6 py-4 rounded-2xl backdrop-blur-sm">
+                            <div class="text-3xl font-black text-amber-300">8</div>
+                            <div class="text-sm text-white/70">Page 2 Keywords</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-3">
+                        <span class="glass px-5 py-3 rounded-xl text-sm font-medium flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
+                            February 2026
+                        </span>
+                        <span class="glass px-5 py-3 rounded-xl text-sm font-medium flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/></svg>
+                            Data-Driven
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Quick Impact Summary - NEW -->
+        <div class="bg-gradient-to-r from-uagc-blue to-uagc-navy rounded-3xl p-8 mb-10 text-white reveal">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="text-2xl">⚡</span>
+                <h2 class="text-xl font-bold">TL;DR — The Opportunity at a Glance</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white/10 rounded-2xl p-6 backdrop-blur-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-emerald-500 rounded-xl flex items-center justify-center text-xl">🎯</div>
+                        <div class="text-lg font-bold">The Prize</div>
+                    </div>
+                    <p class="text-white/80 text-sm leading-relaxed">
+                        <strong class="text-white">150,000+ monthly searches</strong> for military education keywords with <strong class="text-emerald-300">low competition</strong>. Most competitors aren't targeting these terms effectively.
+                    </p>
+                </div>
+                <div class="bg-white/10 rounded-2xl p-6 backdrop-blur-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-amber-500 rounded-xl flex items-center justify-center text-xl">🚀</div>
+                        <div class="text-lg font-bold">Quick Wins</div>
+                    </div>
+                    <p class="text-white/80 text-sm leading-relaxed">
+                        <strong class="text-white">8 keywords</strong> are just positions away from Page 1. Small optimizations = immediate visibility gains.
+                    </p>
+                </div>
+                <div class="bg-white/10 rounded-2xl p-6 backdrop-blur-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-uagc-red rounded-xl flex items-center justify-center text-xl">📈</div>
+                        <div class="text-lg font-bold">Top Priority</div>
+                    </div>
+                    <p class="text-white/80 text-sm leading-relaxed">
+                        Create comprehensive <strong class="text-white">"GI Bill" guide</strong> targeting 49,500 monthly searches with 0.04 competition score.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sticky Navigation -->
+        <nav class="bg-white/80 backdrop-blur-lg rounded-2xl p-4 md:p-6 mb-10 shadow-lg border border-slate-100 sticky top-4 z-50">
+            <div class="flex items-center justify-between gap-4 flex-wrap">
+                <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+                    <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Navigation</span>
+                </div>
+                <ul class="flex flex-wrap gap-2">
+                    <li><a href="#overview" class="tab-btn inline-flex items-center px-4 py-2.5 text-slate-600 font-medium text-sm rounded-xl border border-slate-200 hover:bg-uagc-red hover:text-white hover:border-uagc-red transition-all duration-300">📋 Overview</a></li>
+                    <li><a href="#performance" class="tab-btn inline-flex items-center px-4 py-2.5 text-slate-600 font-medium text-sm rounded-xl border border-slate-200 hover:bg-uagc-red hover:text-white hover:border-uagc-red transition-all duration-300">📊 Performance</a></li>
+                    <li><a href="#keywords" class="tab-btn inline-flex items-center px-4 py-2.5 text-slate-600 font-medium text-sm rounded-xl border border-slate-200 hover:bg-uagc-red hover:text-white hover:border-uagc-red transition-all duration-300">🔍 Keywords</a></li>
+                    <li><a href="#opportunities" class="tab-btn inline-flex items-center px-4 py-2.5 text-slate-600 font-medium text-sm rounded-xl border border-slate-200 hover:bg-uagc-red hover:text-white hover:border-uagc-red transition-all duration-300">🎯 Opportunities</a></li>
+                    <li><a href="#trends" class="tab-btn inline-flex items-center px-4 py-2.5 text-slate-600 font-medium text-sm rounded-xl border border-slate-200 hover:bg-uagc-red hover:text-white hover:border-uagc-red transition-all duration-300">📈 Trends</a></li>
+                    <li><a href="#strategy" class="tab-btn inline-flex items-center px-4 py-2.5 text-slate-600 font-medium text-sm rounded-xl border border-slate-200 hover:bg-uagc-red hover:text-white hover:border-uagc-red transition-all duration-300">🗺️ Strategy</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Section 1: Executive Overview -->
+        <section class="bg-white rounded-3xl mb-8 shadow-xl overflow-hidden reveal" id="overview">
+            <div class="border-b border-slate-100 px-8 py-6 flex items-center justify-between flex-wrap gap-4">
+                <div class="flex items-center gap-5">
+                    <div class="w-14 h-14 bg-gradient-to-br from-uagc-blue to-uagc-red rounded-2xl flex items-center justify-center text-2xl shadow-lg">📋</div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900">Executive Overview</h2>
+                        <p class="text-slate-500 text-sm mt-1">Key insights at a glance</p>
+                    </div>
+                </div>
+                <span class="px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold flex items-center gap-2">
+                    <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+                    High Opportunity
+                </span>
+            </div>
+            <div class="p-8 md:p-10">
+                
+                <!-- Visual Opportunity Gauge -->
+                <div class="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-8 mb-10 text-white relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-uagc-red/20 rounded-full blur-3xl"></div>
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="text-2xl">💎</span>
+                            <h3 class="text-xl font-bold">Market Opportunity Score</h3>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <!-- Visual Gauge -->
+                            <div class="flex justify-center">
+                                <div class="relative">
+                                    <svg class="circular-progress w-48 h-48 transform -rotate-90" viewBox="0 0 120 120">
+                                        <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="12"/>
+                                        <circle cx="60" cy="60" r="52" fill="none" stroke="url(#gradient)" stroke-width="12" stroke-dasharray="326.73" stroke-dashoffset="49" class="transition-all duration-1000"/>
+                                        <defs>
+                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" stop-color="#10B981"/>
+                                                <stop offset="100%" stop-color="#AB0520"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                        <span class="text-5xl font-black">85</span>
+                                        <span class="text-sm text-white/60">out of 100</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Score Breakdown -->
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-white/70">Search Volume</span>
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-32 h-2 bg-white/20 rounded-full overflow-hidden">
+                                            <div class="h-full bg-emerald-500 rounded-full" style="width: 95%"></div>
+                                        </div>
+                                        <span class="text-sm font-bold text-emerald-400">95%</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-white/70">Low Competition</span>
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-32 h-2 bg-white/20 rounded-full overflow-hidden">
+                                            <div class="h-full bg-emerald-500 rounded-full" style="width: 90%"></div>
+                                        </div>
+                                        <span class="text-sm font-bold text-emerald-400">90%</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-white/70">Current Coverage</span>
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-32 h-2 bg-white/20 rounded-full overflow-hidden">
+                                            <div class="h-full bg-amber-500 rounded-full" style="width: 25%"></div>
+                                        </div>
+                                        <span class="text-sm font-bold text-amber-400">25%</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-white/70">Quick Win Potential</span>
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-32 h-2 bg-white/20 rounded-full overflow-hidden">
+                                            <div class="h-full bg-emerald-500 rounded-full" style="width: 80%"></div>
+                                        </div>
+                                        <span class="text-sm font-bold text-emerald-400">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Audience Tabs -->
+                <h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-600">👥</span>
+                    Who Are We Targeting?
+                </h3>
+                
+                <div class="grid md:grid-cols-4 gap-4 mb-10">
+                    <div class="group card-hover bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-6 text-white relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
+                        <div class="relative z-10">
+                            <div class="text-4xl mb-3">🎖️</div>
+                            <h4 class="font-bold text-lg mb-2">Active Duty</h4>
+                            <p class="text-sm text-white/80">Flexible, deployment-friendly education</p>
+                            <div class="mt-4 pt-4 border-t border-white/20 text-xs">
+                                <span class="font-semibold">Search Focus:</span> Online degrees, TA benefits
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group card-hover bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl p-6 text-white relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
+                        <div class="relative z-10">
+                            <div class="text-4xl mb-3">🎗️</div>
+                            <h4 class="font-bold text-lg mb-2">Veterans</h4>
+                            <p class="text-sm text-white/80">GI Bill maximization, career transition</p>
+                            <div class="mt-4 pt-4 border-t border-white/20 text-xs">
+                                <span class="font-semibold">Search Focus:</span> GI Bill, VA benefits
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group card-hover bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-6 text-white relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
+                        <div class="relative z-10">
+                            <div class="text-4xl mb-3">👨‍👩‍👧</div>
+                            <h4 class="font-bold text-lg mb-2">Spouses</h4>
+                            <p class="text-sm text-white/80">MyCAA, portable credentials</p>
+                            <div class="mt-4 pt-4 border-t border-white/20 text-xs">
+                                <span class="font-semibold">Search Focus:</span> Military spouse scholarships
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group card-hover bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl p-6 text-white relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
+                        <div class="relative z-10">
+                            <div class="text-4xl mb-3">🏛️</div>
+                            <h4 class="font-bold text-lg mb-2">By Branch</h4>
+                            <p class="text-sm text-white/80">Branch-specific TA programs</p>
+                            <div class="mt-4 pt-4 border-t border-white/20 text-xs">
+                                <span class="font-semibold">Search Focus:</span> Army, Navy, AF TA
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Key Metrics with Visual Comparison -->
+                <h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-emerald-100 rounded-lg flex items-center justify-center text-emerald-600">📊</span>
+                    Current Site Performance (90 Days)
+                </h3>
+                
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 stagger-children active">
+                    <div class="card-hover bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-2xl p-6 text-center relative overflow-hidden group">
+                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-uagc-blue to-uagc-navy"></div>
+                        <div class="text-4xl font-black text-slate-900 mb-1 group-hover:scale-110 transition-transform">
+                            <span class="counter" data-target="123400">123.4K</span>
+                        </div>
+                        <div class="text-sm text-slate-500 font-medium">Organic Clicks</div>
+                        <div class="mt-3 flex items-center justify-center gap-1 text-xs text-slate-400">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                            Site-wide
+                        </div>
+                    </div>
+                    <div class="card-hover bg-gradient-to-br from-emerald-50 to-white border border-emerald-200 rounded-2xl p-6 text-center relative overflow-hidden group">
+                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-400 to-emerald-600"></div>
+                        <div class="text-4xl font-black text-emerald-600 mb-1 group-hover:scale-110 transition-transform">25.1M</div>
+                        <div class="text-sm text-slate-500 font-medium">Impressions</div>
+                        <div class="mt-3 flex items-center justify-center gap-1 text-xs text-emerald-600">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            Strong reach
+                        </div>
+                    </div>
+                    <div class="card-hover bg-gradient-to-br from-amber-50 to-white border border-amber-200 rounded-2xl p-6 text-center relative overflow-hidden group">
+                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-400 to-amber-600"></div>
+                        <div class="text-4xl font-black text-amber-600 mb-1 group-hover:scale-110 transition-transform">0.49%</div>
+                        <div class="text-sm text-slate-500 font-medium">Average CTR</div>
+                        <div class="mt-3 flex items-center justify-center gap-1 text-xs text-amber-600">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+                            Needs improvement
+                        </div>
+                    </div>
+                    <div class="card-hover bg-gradient-to-br from-red-50 to-white border border-red-200 rounded-2xl p-6 text-center relative overflow-hidden group">
+                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-uagc-red to-red-600"></div>
+                        <div class="text-4xl font-black text-uagc-red mb-1 group-hover:scale-110 transition-transform">12.1</div>
+                        <div class="text-sm text-slate-500 font-medium">Avg. Position</div>
+                        <div class="mt-3 flex items-center justify-center gap-1 text-xs text-uagc-red">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                            Page 2 average
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 2: Current Performance -->
+        <section class="bg-white rounded-3xl mb-8 shadow-xl overflow-hidden reveal" id="performance">
+            <div class="border-b border-slate-100 px-8 py-6 flex items-center gap-5">
+                <div class="w-14 h-14 bg-gradient-to-br from-uagc-blue to-uagc-red rounded-2xl flex items-center justify-center text-2xl shadow-lg">📊</div>
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900">Military Hub Performance</h2>
+                    <p class="text-slate-500 text-sm mt-1">How our military pages are performing today</p>
+                </div>
+            </div>
+            <div class="p-8 md:p-10">
+                
+                <!-- Visual Hub Performance -->
+                <div class="bg-gradient-to-br from-indigo-50 via-white to-purple-50 rounded-3xl p-8 mb-10 border border-indigo-100">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-2xl">🏠</span>
+                        <h3 class="text-lg font-bold text-slate-900">/military/* Hub Performance</h3>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white">
+                                <div>
+                                    <div class="text-2xl font-black">11.9K</div>
+                                    <div class="text-xs opacity-80">users</div>
+                                </div>
+                            </div>
+                            <div class="text-sm font-semibold text-slate-700">Active Users</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white">
+                                <div>
+                                    <div class="text-2xl font-black">12.6K</div>
+                                    <div class="text-xs opacity-80">total</div>
+                                </div>
+                            </div>
+                            <div class="text-sm font-semibold text-slate-700">Sessions</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white">
+                                <div>
+                                    <div class="text-2xl font-black">13.9K</div>
+                                    <div class="text-xs opacity-80">views</div>
+                                </div>
+                            </div>
+                            <div class="text-sm font-semibold text-slate-700">Page Views</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-white">
+                                <div>
+                                    <div class="text-2xl font-black">33%</div>
+                                    <div class="text-xs opacity-80">engage</div>
+                                </div>
+                            </div>
+                            <div class="text-sm font-semibold text-slate-700">Engagement</div>
+                            <div class="text-xs text-amber-600 mt-1">⚠️ Below target</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Branch Performance Visual -->
+                <h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center text-red-600">⚠️</span>
+                    Branch Page Health Check
+                </h3>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+                    <!-- Main Hub - Strongest -->
+                    <div class="relative card-hover bg-white border-2 border-emerald-300 rounded-2xl p-5 text-center">
+                        <div class="absolute -top-2 -right-2 w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <div class="text-3xl mb-2">🏠</div>
+                        <h4 class="text-sm font-bold text-slate-900 mb-2">Main Hub</h4>
+                        <div class="text-3xl font-black text-emerald-600">40</div>
+                        <div class="text-xs text-slate-400">monthly traffic</div>
+                        <div class="mt-2 px-2 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-semibold">42 keywords</div>
+                    </div>
+                    
+                    <!-- Others - Need Attention -->
+                    <div class="relative card-hover bg-white border-2 border-amber-300 rounded-2xl p-5 text-center">
+                        <div class="absolute -top-2 -right-2 w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center">
+                            <span class="text-white text-xs font-bold">!</span>
+                        </div>
+                        <div class="text-3xl mb-2">👨‍👩‍👧</div>
+                        <h4 class="text-sm font-bold text-slate-900 mb-2">Spouses</h4>
+                        <div class="text-3xl font-black text-amber-600">5</div>
+                        <div class="text-xs text-slate-400">monthly traffic</div>
+                        <div class="mt-2 px-2 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-semibold">10 keywords</div>
+                    </div>
+                    
+                    <div class="relative card-hover bg-white border-2 border-red-300 rounded-2xl p-5 text-center">
+                        <div class="absolute -top-2 -right-2 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center">
+                            <span class="text-white text-xs font-bold">!</span>
+                        </div>
+                        <div class="text-3xl mb-2">⚓</div>
+                        <h4 class="text-sm font-bold text-slate-900 mb-2">Coast Guard</h4>
+                        <div class="text-3xl font-black text-red-500">2</div>
+                        <div class="text-xs text-slate-400">monthly traffic</div>
+                        <div class="mt-2 px-2 py-1 bg-red-100 text-red-700 rounded-full text-xs font-semibold">10 keywords</div>
+                    </div>
+                    
+                    <div class="relative card-hover bg-white border-2 border-red-300 rounded-2xl p-5 text-center">
+                        <div class="absolute -top-2 -right-2 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center">
+                            <span class="text-white text-xs font-bold">!</span>
+                        </div>
+                        <div class="text-3xl mb-2">🎖️</div>
+                        <h4 class="text-sm font-bold text-slate-900 mb-2">Active Duty</h4>
+                        <div class="text-3xl font-black text-red-500">1</div>
+                        <div class="text-xs text-slate-400">monthly traffic</div>
+                        <div class="mt-2 px-2 py-1 bg-red-100 text-red-700 rounded-full text-xs font-semibold">3 keywords</div>
+                    </div>
+                    
+                    <div class="relative card-hover bg-white border-2 border-red-300 rounded-2xl p-5 text-center">
+                        <div class="absolute -top-2 -right-2 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center">
+                            <span class="text-white text-xs font-bold">!</span>
+                        </div>
+                        <div class="text-3xl mb-2">🦅</div>
+                        <h4 class="text-sm font-bold text-slate-900 mb-2">Marines</h4>
+                        <div class="text-3xl font-black text-red-500">1</div>
+                        <div class="text-xs text-slate-400">monthly traffic</div>
+                        <div class="mt-2 px-2 py-1 bg-red-100 text-red-700 rounded-full text-xs font-semibold">4 keywords</div>
+                    </div>
+                    
+                    <div class="relative card-hover bg-white border-2 border-red-400 rounded-2xl p-5 text-center">
+                        <div class="absolute -top-2 -right-2 w-6 h-6 bg-red-600 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <div class="text-3xl mb-2">🎗️</div>
+                        <h4 class="text-sm font-bold text-slate-900 mb-2">Veterans</h4>
+                        <div class="text-3xl font-black text-red-600">0</div>
+                        <div class="text-xs text-slate-400">monthly traffic</div>
+                        <div class="mt-2 px-2 py-1 bg-red-100 text-red-700 rounded-full text-xs font-semibold">1 keyword</div>
+                    </div>
+                </div>
+                
+                <!-- Critical Alert -->
+                <div class="bg-gradient-to-r from-red-500 to-rose-600 rounded-2xl p-6 text-white mb-8 relative overflow-hidden">
+                    <div class="absolute right-0 top-0 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+                    <div class="relative z-10 flex items-start gap-4">
+                        <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <span class="text-2xl">🚨</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Critical Gap Identified</h4>
+                            <p class="text-white/90">Army, Navy, Air Force, Space Force, and Veterans pages have <strong>near-zero organic visibility</strong>. This represents the biggest opportunity to capture branch-specific search intent.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 3: Keyword Opportunities -->
+        <section class="bg-white rounded-3xl mb-8 shadow-xl overflow-hidden reveal" id="keywords">
+            <div class="border-b border-slate-100 px-8 py-6 flex items-center gap-5">
+                <div class="w-14 h-14 bg-gradient-to-br from-uagc-blue to-uagc-red rounded-2xl flex items-center justify-center text-2xl shadow-lg">🔍</div>
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900">Keyword Gold Mine</h2>
+                    <p class="text-slate-500 text-sm mt-1">High-value, low-competition opportunities</p>
+                </div>
+            </div>
+            <div class="p-8 md:p-10">
+                
+                <!-- Top 3 Keywords - Visual Cards -->
+                <div class="mb-10">
+                    <h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center text-amber-600">🏆</span>
+                        Top 3 Keyword Opportunities
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- #1 GI Bill -->
+                        <div class="relative group">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-500 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-300"></div>
+                            <div class="relative bg-white rounded-2xl p-6 border border-amber-200">
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-4xl">🥇</span>
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-bold">#1 Priority</span>
+                                </div>
+                                <h4 class="text-xl font-bold text-slate-900 mb-2">"gi bill"</h4>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-slate-500 text-sm">Monthly Volume</span>
+                                        <span class="text-2xl font-black text-uagc-red">49,500</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-slate-500 text-sm">Competition</span>
+                                        <div class="flex items-center gap-2">
+                                            <div class="w-20 h-2 bg-slate-200 rounded-full overflow-hidden">
+                                                <div class="h-full bg-emerald-500 rounded-full" style="width: 4%"></div>
+                                            </div>
+                                            <span class="text-emerald-600 font-bold text-sm">0.04</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-slate-500 text-sm">CPC Value</span>
+                                        <span class="text-slate-700 font-semibold">$2.32</span>
+                                    </div>
+                                </div>
+                                <div class="mt-4 pt-4 border-t border-slate-100">
+                                    <div class="flex items-center gap-2 text-emerald-600 text-sm font-semibold">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                        Extremely low competition!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- #2 VA Education Benefits -->
+                        <div class="relative group">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-slate-300 via-slate-400 to-slate-500 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
+                            <div class="relative bg-white rounded-2xl p-6 border border-slate-200">
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-4xl">🥈</span>
+                                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-xs font-bold">#2 Priority</span>
+                                </div>
+                                <h4 class="text-xl font-bold text-slate-900 mb-2">"va education benefits"</h4>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-slate-500 text-sm">Monthly Volume</span>
+                                        <span class="text-2xl font-black text-uagc-blue">18,100</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-slate-500 text-sm">Competition</span>
+                                        <div class="flex items-center gap-2">
+                                            <div class="w-20 h-2 bg-slate-200 rounded-full overflow-hidden">
+                                                <div class="h-full bg-emerald-500 rounded-full" style="width: 10%"></div>
+                                            </div>
+                                            <span class="text-emerald-600 font-bold text-sm">0.10</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-slate-500 text-sm">CPC Value</span>
+                                        <span class="text-slate-700 font-semibold">$1.26</span>
+                                    </div>
+                                </div>
+                                <div class="mt-4 pt-4 border-t border-slate-100">
+                                    <div class="flex items-center gap-2 text-emerald-600 text-sm font-semibold">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                        Very low competition
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- #3 Yellow Ribbon -->
+                        <div class="relative group">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-amber-700 via-amber-800 to-yellow-700 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
+                            <div class="relative bg-white rounded-2xl p-6 border border-amber-100">
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-4xl">🥉</span>
+                                    <span class="px-3 py-1 bg-amber-50 text-amber-700 rounded-full text-xs font-bold">#3 Priority</span>
+                                </div>
+                                <h4 class="text-xl font-bold text-slate-900 mb-2">"yellow ribbon program"</h4>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-slate-500 text-sm">Monthly Volume</span>
+                                        <span class="text-2xl font-black text-amber-600">6,600</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-slate-500 text-sm">Competition</span>
+                                        <div class="flex items-center gap-2">
+                                            <div class="w-20 h-2 bg-slate-200 rounded-full overflow-hidden">
+                                                <div class="h-full bg-amber-500 rounded-full" style="width: 30%"></div>
+                                            </div>
+                                            <span class="text-amber-600 font-bold text-sm">0.30</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-slate-500 text-sm">CPC Value</span>
+                                        <span class="text-slate-700 font-semibold">$3.16</span>
+                                    </div>
+                                </div>
+                                <div class="mt-4 pt-4 border-t border-slate-100">
+                                    <div class="flex items-center gap-2 text-amber-600 text-sm font-semibold">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                        Moderate competition
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Branch Keywords Visual -->
+                <h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">🎖️</span>
+                    Branch-Specific Opportunities
+                </h3>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+                    <div class="card-hover bg-gradient-to-br from-green-50 to-white border border-green-200 rounded-2xl p-5">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="text-2xl">🪖</span>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Army TA</h4>
+                                <p class="text-xs text-slate-500">army tuition assistance</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <div class="text-2xl font-black text-green-700">1,900</div>
+                                <div class="text-xs text-slate-400">searches/mo</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-bold text-emerald-600">0.23</div>
+                                <div class="text-xs text-emerald-600">Low comp.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-br from-blue-50 to-white border border-blue-200 rounded-2xl p-5">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="text-2xl">⚓</span>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Navy TA</h4>
+                                <p class="text-xs text-slate-500">navy tuition assistance</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <div class="text-2xl font-black text-blue-700">1,900</div>
+                                <div class="text-xs text-slate-400">searches/mo</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-bold text-emerald-600">0.10</div>
+                                <div class="text-xs text-emerald-600">Very low!</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-br from-sky-50 to-white border border-sky-200 rounded-2xl p-5">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="text-2xl">✈️</span>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Air Force TA</h4>
+                                <p class="text-xs text-slate-500">air force tuition assistance</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <div class="text-2xl font-black text-sky-700">1,000</div>
+                                <div class="text-xs text-slate-400">searches/mo</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-bold text-emerald-600">0.18</div>
+                                <div class="text-xs text-emerald-600">Low comp.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-br from-red-50 to-white border border-red-200 rounded-2xl p-5">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="text-2xl">🦅</span>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Marines TA</h4>
+                                <p class="text-xs text-slate-500">marine corps tuition assistance</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <div class="text-2xl font-black text-red-700">1,000</div>
+                                <div class="text-xs text-slate-400">searches/mo</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-bold text-emerald-600">0.12</div>
+                                <div class="text-xs text-emerald-600">Very low!</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-br from-orange-50 to-white border border-orange-200 rounded-2xl p-5">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="text-2xl">⚓</span>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Coast Guard</h4>
+                                <p class="text-xs text-slate-500">coast guard education benefits</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <div class="text-2xl font-black text-orange-700">50</div>
+                                <div class="text-xs text-slate-400">searches/mo</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-bold text-emerald-600">0.03</div>
+                                <div class="text-xs text-emerald-600">Lowest!</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-br from-purple-50 to-white border border-purple-200 rounded-2xl p-5 relative overflow-hidden">
+                        <div class="absolute top-2 right-2">
+                            <span class="px-2 py-1 bg-purple-500 text-white text-xs font-bold rounded-full animate-pulse">NEW</span>
+                        </div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="text-2xl">🚀</span>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Space Force</h4>
+                                <p class="text-xs text-slate-500">space force education</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <div class="text-lg font-bold text-purple-700">Emerging</div>
+                                <div class="text-xs text-slate-400">growing trend</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-bold text-emerald-600">Low</div>
+                                <div class="text-xs text-purple-600">First mover!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TOFU Keywords -->
+                <h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600">📅</span>
+                    Seasonal TOFU Content Opportunities
+                </h3>
+                
+                <div class="bg-gradient-to-r from-purple-50 via-pink-50 to-red-50 rounded-2xl p-6 border border-purple-100">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="bg-white rounded-xl p-4 shadow-sm">
+                            <div class="text-2xl mb-2">🇺🇸</div>
+                            <h4 class="font-bold text-slate-900 text-sm">Memorial Day</h4>
+                            <p class="text-xs text-slate-500 mb-2">"memorial day meaning"</p>
+                            <div class="text-xl font-black text-purple-600">60,500</div>
+                            <div class="text-xs text-slate-400">peak searches</div>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 shadow-sm">
+                            <div class="text-2xl mb-2">🎖️</div>
+                            <h4 class="font-bold text-slate-900 text-sm">Veterans Day</h4>
+                            <p class="text-xs text-slate-500 mb-2">"veterans day history"</p>
+                            <div class="text-xl font-black text-purple-600">3,600</div>
+                            <div class="text-xs text-slate-400">peak searches</div>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 shadow-sm">
+                            <div class="text-2xl mb-2">🕊️</div>
+                            <h4 class="font-bold text-slate-900 text-sm">Patriot Day</h4>
+                            <p class="text-xs text-slate-500 mb-2">"patriot day significance"</p>
+                            <div class="text-xl font-black text-purple-600">Seasonal</div>
+                            <div class="text-xs text-slate-400">September focus</div>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 shadow-sm">
+                            <div class="text-2xl mb-2">👨‍👩‍👧</div>
+                            <h4 class="font-bold text-slate-900 text-sm">Military Family</h4>
+                            <p class="text-xs text-slate-500 mb-2">"military family appreciation"</p>
+                            <div class="text-xl font-black text-purple-600">November</div>
+                            <div class="text-xs text-slate-400">awareness month</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 4: Quick Win Opportunities -->
+        <section class="bg-white rounded-3xl mb-8 shadow-xl overflow-hidden reveal" id="opportunities">
+            <div class="border-b border-slate-100 px-8 py-6 flex items-center gap-5">
+                <div class="w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center text-2xl shadow-lg">🎯</div>
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900">Quick Win Opportunities</h2>
+                    <p class="text-slate-500 text-sm mt-1">Keywords just positions away from Page 1</p>
+                </div>
+            </div>
+            <div class="p-8 md:p-10">
+                
+                <!-- Visual explanation -->
+                <div class="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-6 mb-8 border border-emerald-200">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-emerald-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <span class="text-2xl">💡</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-2">Why These Matter</h4>
+                            <p class="text-slate-600">These keywords are already ranking on Page 2-3, meaning Google already sees UAGC as relevant. <strong>Small optimizations</strong> (better titles, more content, internal links) can push these to Page 1 for immediate traffic gains.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Progress to Page 1 -->
+                <h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-emerald-100 rounded-lg flex items-center justify-center text-emerald-600">📈</span>
+                    Distance to Page 1
+                </h3>
+                
+                <div class="space-y-6 mb-10">
+                    <!-- Keyword 1 - Closest -->
+                    <div class="bg-gradient-to-r from-emerald-50 to-white border border-emerald-200 rounded-2xl p-6">
+                        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+                            <div>
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="px-2 py-1 bg-emerald-500 text-white text-xs font-bold rounded">CLOSEST</span>
+                                    <h4 class="font-bold text-slate-900">best online colleges for military spouses</h4>
+                                </div>
+                                <p class="text-sm text-slate-500">Currently ranking position 11.5</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-black text-emerald-600">4</div>
+                                <div class="text-xs text-slate-500">positions away</div>
+                            </div>
+                        </div>
+                        <div class="relative h-8 bg-slate-200 rounded-full overflow-hidden">
+                            <div class="absolute inset-y-0 left-0 bg-gradient-to-r from-emerald-400 to-emerald-600 rounded-full transition-all duration-1000" style="width: 85%"></div>
+                            <div class="absolute inset-y-0 flex items-center justify-between px-4 w-full">
+                                <span class="text-xs font-bold text-white z-10">Position 11.5</span>
+                                <span class="text-xs font-bold text-slate-600">Page 1 →</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Keyword 2 -->
+                    <div class="bg-gradient-to-r from-amber-50 to-white border border-amber-200 rounded-2xl p-6">
+                        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+                            <div>
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="px-2 py-1 bg-amber-500 text-white text-xs font-bold rounded">CLOSE</span>
+                                    <h4 class="font-bold text-slate-900">best online master's programs for military</h4>
+                                </div>
+                                <p class="text-sm text-slate-500">Currently ranking position 17.9</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-black text-amber-600">8</div>
+                                <div class="text-xs text-slate-500">positions away</div>
+                            </div>
+                        </div>
+                        <div class="relative h-8 bg-slate-200 rounded-full overflow-hidden">
+                            <div class="absolute inset-y-0 left-0 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full transition-all duration-1000" style="width: 55%"></div>
+                            <div class="absolute inset-y-0 flex items-center justify-between px-4 w-full">
+                                <span class="text-xs font-bold text-white z-10">Position 17.9</span>
+                                <span class="text-xs font-bold text-slate-600">Page 1 →</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Keyword 3 -->
+                    <div class="bg-gradient-to-r from-blue-50 to-white border border-blue-200 rounded-2xl p-6">
+                        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+                            <div>
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="px-2 py-1 bg-blue-500 text-white text-xs font-bold rounded">REACHABLE</span>
+                                    <h4 class="font-bold text-slate-900">best online military colleges</h4>
+                                </div>
+                                <p class="text-sm text-slate-500">Currently ranking position 19.7</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-black text-blue-600">10</div>
+                                <div class="text-xs text-slate-500">positions away</div>
+                            </div>
+                        </div>
+                        <div class="relative h-8 bg-slate-200 rounded-full overflow-hidden">
+                            <div class="absolute inset-y-0 left-0 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full transition-all duration-1000" style="width: 48%"></div>
+                            <div class="absolute inset-y-0 flex items-center justify-between px-4 w-full">
+                                <span class="text-xs font-bold text-white z-10">Position 19.7</span>
+                                <span class="text-xs font-bold text-slate-600">Page 1 →</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Action Cards -->
+                <h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center text-red-600">🚨</span>
+                    High-Impression Keywords Needing Action
+                </h3>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="card-hover bg-red-50 border-2 border-red-200 rounded-2xl p-5 relative">
+                        <div class="absolute top-3 right-3">
+                            <span class="px-2 py-1 bg-red-500 text-white text-xs font-bold rounded animate-pulse">URGENT</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mb-1 pr-16">best online colleges for military</h4>
+                        <p class="text-sm text-slate-500 mb-4">Position: 34.2 | Impressions: 162</p>
+                        <div class="flex items-center gap-2 text-red-600 text-sm font-semibold">
+                            <span>⚠️</span> Content needed
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-amber-50 border-2 border-amber-200 rounded-2xl p-5">
+                        <h4 class="font-bold text-slate-900 mb-1">best online military colleges</h4>
+                        <p class="text-sm text-slate-500 mb-4">Position: 19.7 | Impressions: 116</p>
+                        <div class="flex items-center gap-2 text-amber-600 text-sm font-semibold">
+                            <span>🔧</span> Optimize existing
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-amber-50 border-2 border-amber-200 rounded-2xl p-5">
+                        <h4 class="font-bold text-slate-900 mb-1">best online schools for military</h4>
+                        <p class="text-sm text-slate-500 mb-4">Position: 23.2 | Impressions: 96</p>
+                        <div class="flex items-center gap-2 text-amber-600 text-sm font-semibold">
+                            <span>📝</span> Content expansion
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-red-50 border-2 border-red-200 rounded-2xl p-5">
+                        <h4 class="font-bold text-slate-900 mb-1">colleges for military</h4>
+                        <p class="text-sm text-slate-500 mb-4">Position: 47.6 | Impressions: 76</p>
+                        <div class="flex items-center gap-2 text-red-600 text-sm font-semibold">
+                            <span>⚠️</span> Content needed
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-red-50 border-2 border-red-200 rounded-2xl p-5">
+                        <h4 class="font-bold text-slate-900 mb-1">colleges for active duty military</h4>
+                        <p class="text-sm text-slate-500 mb-4">Position: 51.3 | Impressions: 63</p>
+                        <div class="flex items-center gap-2 text-red-600 text-sm font-semibold">
+                            <span>⚠️</span> Content needed
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-amber-50 border-2 border-amber-200 rounded-2xl p-5">
+                        <h4 class="font-bold text-slate-900 mb-1">best military friendly online colleges</h4>
+                        <p class="text-sm text-slate-500 mb-4">Position: 23.3 | Impressions: 70</p>
+                        <div class="flex items-center gap-2 text-amber-600 text-sm font-semibold">
+                            <span>🔧</span> Optimize existing
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 5: Trends & Emerging Topics -->
+        <section class="bg-white rounded-3xl mb-8 shadow-xl overflow-hidden reveal" id="trends">
+            <div class="border-b border-slate-100 px-8 py-6 flex items-center justify-between flex-wrap gap-4">
+                <div class="flex items-center gap-5">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl flex items-center justify-center text-2xl shadow-lg">📈</div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900">Trends & Emerging Topics</h2>
+                        <p class="text-slate-500 text-sm mt-1">Trending searches and policy updates for content opportunities</p>
+                    </div>
+                </div>
+                <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold flex items-center gap-2">
+                    <span class="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></span>
+                    Live Data
+                </span>
+            </div>
+            <div class="p-8 md:p-10">
+                
+                <!-- Breaking Policy Updates -->
+                <div class="bg-gradient-to-br from-red-50 to-orange-50 border-2 border-red-200 rounded-3xl p-8 mb-10">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-3xl animate-bounce-slow">🔔</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Breaking: Policy Updates to Cover</h3>
+                            <p class="text-sm text-slate-600">Timely content opportunities based on recent government announcements</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- GI Bill Rates -->
+                        <div class="card-hover bg-white rounded-2xl p-6 border border-red-200">
+                            <div class="flex items-center gap-3 mb-4">
+                                <span class="px-3 py-1 bg-red-500 text-white text-xs font-bold rounded-full">NEW RATES</span>
+                                <span class="text-xs text-slate-500">August 2025</span>
+                            </div>
+                            <h4 class="font-bold text-slate-900 text-lg mb-3">Post-9/11 GI Bill 2025-2026 Rates</h4>
+                            <ul class="space-y-2 text-sm text-slate-600 mb-4">
+                                <li class="flex items-center gap-2"><span class="text-emerald-500">↑</span> 3.4% increase across all benefits</li>
+                                <li class="flex items-center gap-2"><span class="text-emerald-500">↑</span> Private schools: <strong>$29,920.95/year</strong></li>
+                                <li class="flex items-center gap-2"><span class="text-emerald-500">↑</span> Flight training: <strong>$17,097.67/year</strong></li>
+                                <li class="flex items-center gap-2"><span class="text-blue-500">→</span> Online MHA: <strong>$1,169/month</strong></li>
+                            </ul>
+                            <div class="flex items-center gap-2 text-xs text-red-600 font-semibold">
+                                <span>📝</span> Content Opportunity: Update all GI Bill pages with 2025-26 rates
+                            </div>
+                        </div>
+                        
+                        <!-- Army TA Changes -->
+                        <div class="card-hover bg-white rounded-2xl p-6 border border-amber-200">
+                            <div class="flex items-center gap-3 mb-4">
+                                <span class="px-3 py-1 bg-amber-500 text-white text-xs font-bold rounded-full">POLICY CHANGE</span>
+                                <span class="text-xs text-slate-500">December 2024</span>
+                            </div>
+                            <h4 class="font-bold text-slate-900 text-lg mb-3">Army Tuition Assistance Updates</h4>
+                            <ul class="space-y-2 text-sm text-slate-600 mb-4">
+                                <li class="flex items-center gap-2"><span class="text-emerald-500">↑</span> Annual cap: $4,000 → <strong>$4,500</strong></li>
+                                <li class="flex items-center gap-2"><span class="text-emerald-500">↑</span> Semester hours: 16 → <strong>18</strong></li>
+                                <li class="flex items-center gap-2"><span class="text-red-500">↓</span> Credentialing cap: $4,000 → <strong>$2,000</strong></li>
+                                <li class="flex items-center gap-2"><span class="text-blue-500">→</span> New training required for first-time users</li>
+                            </ul>
+                            <div class="flex items-center gap-2 text-xs text-amber-600 font-semibold">
+                                <span>📝</span> Content Opportunity: Army-specific TA guide with new policies
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- People Also Search For - Trending Queries -->
+                <h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600">🔍</span>
+                    Trending Search Queries (People Also Search For)
+                </h3>
+                
+                <div class="grid lg:grid-cols-2 gap-8 mb-10">
+                    <!-- GI Bill Related -->
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 border border-blue-200">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="text-2xl">🎖️</span>
+                            <h4 class="font-bold text-slate-900">GI Bill Related Queries</h4>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-blue-200 hover:bg-blue-500 hover:text-white transition-all cursor-default">gi bill benefits calculator</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-blue-200 hover:bg-blue-500 hover:text-white transition-all cursor-default">post 9 11 gi bill transfer</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-blue-200 hover:bg-blue-500 hover:text-white transition-all cursor-default">gi bill for dependents</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-blue-200 hover:bg-blue-500 hover:text-white transition-all cursor-default">gi bill for private college</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-blue-200 hover:bg-blue-500 hover:text-white transition-all cursor-default">forever gi bill eligibility</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-blue-200 hover:bg-blue-500 hover:text-white transition-all cursor-default">gi bill payment dates</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-blue-200 hover:bg-blue-500 hover:text-white transition-all cursor-default">montgomery gi bill</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-blue-200 hover:bg-blue-500 hover:text-white transition-all cursor-default">chapter 31 gi bill</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-blue-200 hover:bg-blue-500 hover:text-white transition-all cursor-default">post 911 gi bill extension</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-blue-200 hover:bg-blue-500 hover:text-white transition-all cursor-default">gi bill certificate of eligibility</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-blue-200 hover:bg-blue-500 hover:text-white transition-all cursor-default">va education benefits chapter 35</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-blue-200 hover:bg-blue-500 hover:text-white transition-all cursor-default">reserve component gi bill</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Tuition Assistance Related -->
+                    <div class="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-6 border border-emerald-200">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="text-2xl">📚</span>
+                            <h4 class="font-bold text-slate-900">Tuition Assistance Queries</h4>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-emerald-200 hover:bg-emerald-500 hover:text-white transition-all cursor-default">tuition assistance air force</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-emerald-200 hover:bg-emerald-500 hover:text-white transition-all cursor-default">tuition assistance army</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-emerald-200 hover:bg-emerald-500 hover:text-white transition-all cursor-default">tuition assistance marine corps</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-emerald-200 hover:bg-emerald-500 hover:text-white transition-all cursor-default">navy ta per year</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-emerald-200 hover:bg-emerald-500 hover:text-white transition-all cursor-default">coast guard tuition assistance</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-emerald-200 hover:bg-emerald-500 hover:text-white transition-all cursor-default">national guard tuition assistance by state</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-emerald-200 hover:bg-emerald-500 hover:text-white transition-all cursor-default">military tuition assistance spouse</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-emerald-200 hover:bg-emerald-500 hover:text-white transition-all cursor-default">army tuition assistance eligibility</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-emerald-200 hover:bg-emerald-500 hover:text-white transition-all cursor-default">air force tuition assistance rules</span>
+                            <span class="px-3 py-1.5 bg-white text-slate-700 rounded-full text-sm border border-emerald-200 hover:bg-emerald-500 hover:text-white transition-all cursor-default">dropping a class with tuition assistance</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Emerging Content Topics -->
+                <h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center text-amber-600">💡</span>
+                    Emerging Content Topic Ideas
+                </h3>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+                    <div class="card-hover bg-gradient-to-br from-purple-50 to-white border-2 border-purple-200 rounded-2xl p-5">
+                        <div class="text-3xl mb-3">🧮</div>
+                        <h4 class="font-bold text-slate-900 mb-2">GI Bill Calculator</h4>
+                        <p class="text-sm text-slate-600 mb-3">Interactive tool to estimate benefits based on service history</p>
+                        <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-semibold">High Intent Tool</span>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 rounded-2xl p-5">
+                        <div class="text-3xl mb-3">🔄</div>
+                        <h4 class="font-bold text-slate-900 mb-2">GI Bill Transfer Guide</h4>
+                        <p class="text-sm text-slate-600 mb-3">Step-by-step guide for transferring benefits to dependents</p>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-semibold">FAQ Content</span>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-br from-emerald-50 to-white border-2 border-emerald-200 rounded-2xl p-5">
+                        <div class="text-3xl mb-3">👨‍👩‍👧</div>
+                        <h4 class="font-bold text-slate-900 mb-2">Dependent Benefits Hub</h4>
+                        <p class="text-sm text-slate-600 mb-3">Chapter 35, transferred benefits, and DEA resources</p>
+                        <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded text-xs font-semibold">New Audience</span>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-br from-amber-50 to-white border-2 border-amber-200 rounded-2xl p-5">
+                        <div class="text-3xl mb-3">📋</div>
+                        <h4 class="font-bold text-slate-900 mb-2">Branch-Specific TA Pages</h4>
+                        <p class="text-sm text-slate-600 mb-3">Detailed eligibility, caps, and process for each service</p>
+                        <span class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-xs font-semibold">6 Pages</span>
+                    </div>
+                </div>
+                
+                <!-- MyCAA Spouse Scholarship -->
+                <div class="bg-gradient-to-br from-pink-50 to-rose-50 border-2 border-pink-200 rounded-3xl p-8">
+                    <div class="flex flex-wrap items-start justify-between gap-4 mb-6">
+                        <div class="flex items-center gap-3">
+                            <span class="text-3xl">💕</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">MyCAA Military Spouse Scholarship</h3>
+                                <p class="text-sm text-slate-600">High-opportunity program with limited coverage in SERPs</p>
+                            </div>
+                        </div>
+                        <span class="px-4 py-2 bg-pink-100 text-pink-700 rounded-full text-sm font-semibold">Up to $4,000</span>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-xl p-5 border border-pink-200">
+                            <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                                <span class="text-emerald-500">✓</span> Eligible Spouses
+                            </h4>
+                            <ul class="text-sm text-slate-600 space-y-1">
+                                <li>• E-1 to E-6 enlisted</li>
+                                <li>• W-1 to W-2 warrant officers</li>
+                                <li>• O-1 to O-3 officers</li>
+                                <li>• High school diploma required</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white rounded-xl p-5 border border-pink-200">
+                            <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                                <span class="text-amber-500">⚠️</span> Key Limitation
+                            </h4>
+                            <p class="text-sm text-slate-600 mb-3">E-6 and O-3 enrollment capped at <strong>first 1,250 applicants</strong> due to funding limits.</p>
+                            <p class="text-xs text-slate-500">Creates urgency for content</p>
+                        </div>
+                        
+                        <div class="bg-white rounded-xl p-5 border border-pink-200">
+                            <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                                <span class="text-blue-500">📝</span> Content Opportunity
+                            </h4>
+                            <p class="text-sm text-slate-600">Create comprehensive MyCAA guide with eligibility checker, application process, and how UAGC programs qualify.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!-- Section 6: Strategic Roadmap (formerly Section 5) -->
+        <section class="bg-white rounded-3xl mb-8 shadow-xl overflow-hidden reveal" id="strategy">
+            <div class="border-b border-slate-100 px-8 py-6 flex items-center gap-5">
+                <div class="w-14 h-14 bg-gradient-to-br from-uagc-blue to-uagc-red rounded-2xl flex items-center justify-center text-2xl shadow-lg">🗺️</div>
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900">Strategic Roadmap</h2>
+                    <p class="text-slate-500 text-sm mt-1">Prioritized action plan for maximum impact</p>
+                </div>
+            </div>
+            <div class="p-8 md:p-10">
+                
+                <!-- Priority Timeline -->
+                <div class="relative">
+                    <!-- Timeline Line -->
+                    <div class="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-uagc-red via-amber-500 to-emerald-500 rounded-full hidden md:block"></div>
+                    
+                    <!-- Priority 1 -->
+                    <div class="relative mb-12">
+                        <div class="flex items-start gap-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-uagc-red to-red-600 rounded-2xl flex items-center justify-center text-white font-black text-xl shadow-lg z-10 flex-shrink-0">
+                                P1
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <h3 class="text-xl font-bold text-slate-900">High-Impact Actions</h3>
+                                    <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-bold">DO FIRST</span>
+                                </div>
+                                
+                                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                    <div class="card-hover bg-gradient-to-br from-red-50 to-white border-2 border-red-200 rounded-2xl p-5">
+                                        <div class="flex items-center gap-3 mb-3">
+                                            <span class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center text-xl">📖</span>
+                                            <h4 class="font-bold text-slate-900">GI Bill Guide</h4>
+                                        </div>
+                                        <p class="text-sm text-slate-600 mb-3">Create comprehensive guide targeting 49,500 monthly searches</p>
+                                        <div class="flex items-center gap-2 text-xs">
+                                            <span class="px-2 py-1 bg-red-100 text-red-700 rounded font-semibold">49.5K vol</span>
+                                            <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded font-semibold">0.04 comp</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card-hover bg-gradient-to-br from-red-50 to-white border-2 border-red-200 rounded-2xl p-5">
+                                        <div class="flex items-center gap-3 mb-3">
+                                            <span class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center text-xl">👨‍👩‍👧</span>
+                                            <h4 class="font-bold text-slate-900">Spouses Page</h4>
+                                        </div>
+                                        <p class="text-sm text-slate-600 mb-3">Optimize to push from position 11.5 to Page 1</p>
+                                        <div class="flex items-center gap-2 text-xs">
+                                            <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded font-semibold">4 pos away</span>
+                                            <span class="px-2 py-1 bg-amber-100 text-amber-700 rounded font-semibold">Quick Win</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card-hover bg-gradient-to-br from-red-50 to-white border-2 border-red-200 rounded-2xl p-5">
+                                        <div class="flex items-center gap-3 mb-3">
+                                            <span class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center text-xl">🎖️</span>
+                                            <h4 class="font-bold text-slate-900">Branch Pages</h4>
+                                        </div>
+                                        <p class="text-sm text-slate-600 mb-3">Add TA content to all 6 branch pages</p>
+                                        <div class="flex items-center gap-2 text-xs">
+                                            <span class="px-2 py-1 bg-red-100 text-red-700 rounded font-semibold">6 pages</span>
+                                            <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded font-semibold">Low comp</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Priority 2 -->
+                    <div class="relative mb-12">
+                        <div class="flex items-start gap-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center text-white font-black text-xl shadow-lg z-10 flex-shrink-0">
+                                P2
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <h3 class="text-xl font-bold text-slate-900">Content Development</h3>
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-bold">DO NEXT</span>
+                                </div>
+                                
+                                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                    <div class="card-hover bg-gradient-to-br from-amber-50 to-white border-2 border-amber-200 rounded-2xl p-5">
+                                        <div class="flex items-center gap-3 mb-3">
+                                            <span class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center text-xl">🏛️</span>
+                                            <h4 class="font-bold text-slate-900">VA Benefits Hub</h4>
+                                        </div>
+                                        <p class="text-sm text-slate-600 mb-3">Comprehensive resource for 18,100+ monthly searches</p>
+                                        <div class="text-xs text-slate-500">Chapters 31, 33, 35 + Yellow Ribbon</div>
+                                    </div>
+                                    
+                                    <div class="card-hover bg-gradient-to-br from-amber-50 to-white border-2 border-amber-200 rounded-2xl p-5">
+                                        <div class="flex items-center gap-3 mb-3">
+                                            <span class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center text-xl">📅</span>
+                                            <h4 class="font-bold text-slate-900">TOFU Content</h4>
+                                        </div>
+                                        <p class="text-sm text-slate-600 mb-3">Military remembrance content series</p>
+                                        <div class="text-xs text-slate-500">Memorial Day, Veterans Day, Patriot Day</div>
+                                    </div>
+                                    
+                                    <div class="card-hover bg-gradient-to-br from-amber-50 to-white border-2 border-amber-200 rounded-2xl p-5">
+                                        <div class="flex items-center gap-3 mb-3">
+                                            <span class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center text-xl">🏆</span>
+                                            <h4 class="font-bold text-slate-900">"Best Colleges"</h4>
+                                        </div>
+                                        <p class="text-sm text-slate-600 mb-3">Target comparison keywords (positions 20-40)</p>
+                                        <div class="text-xs text-slate-500">Highlight UAGC military-friendly features</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Priority 3 -->
+                    <div class="relative">
+                        <div class="flex items-start gap-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center text-white font-black text-xl shadow-lg z-10 flex-shrink-0">
+                                P3
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <h3 class="text-xl font-bold text-slate-900">Technical Optimization</h3>
+                                    <span class="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold">ONGOING</span>
+                                </div>
+                                
+                                <div class="grid md:grid-cols-3 gap-4">
+                                    <div class="bg-gradient-to-br from-emerald-50 to-white border border-emerald-200 rounded-2xl p-5">
+                                        <div class="text-2xl mb-2">🔗</div>
+                                        <h4 class="font-bold text-slate-900 mb-2">Internal Linking</h4>
+                                        <p class="text-sm text-slate-600">Cross-link branch pages, blog-to-hub strategy</p>
+                                    </div>
+                                    
+                                    <div class="bg-gradient-to-br from-emerald-50 to-white border border-emerald-200 rounded-2xl p-5">
+                                        <div class="text-2xl mb-2">📊</div>
+                                        <h4 class="font-bold text-slate-900 mb-2">CTR Optimization</h4>
+                                        <p class="text-sm text-slate-600">Test titles, meta descriptions, power words</p>
+                                    </div>
+                                    
+                                    <div class="bg-gradient-to-br from-emerald-50 to-white border border-emerald-200 rounded-2xl p-5">
+                                        <div class="text-2xl mb-2">📋</div>
+                                        <h4 class="font-bold text-slate-900 mb-2">Schema Markup</h4>
+                                        <p class="text-sm text-slate-600">FAQ, HowTo, Organization structured data</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Final Summary Section -->
+        <section class="bg-gradient-to-br from-slate-900 via-uagc-blue to-slate-900 rounded-3xl mb-8 shadow-2xl overflow-hidden text-white reveal">
+            <div class="p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <span class="text-4xl mb-4 block">🎯</span>
+                    <h2 class="text-3xl font-black mb-4">The Bottom Line</h2>
+                    <p class="text-white/70 max-w-2xl mx-auto">Here's what you need to remember from this entire strategy</p>
+                </div>
+                
+                <div class="grid md:grid-cols-4 gap-6 mb-10">
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/20">
+                            <span class="text-4xl font-black">150K+</span>
+                        </div>
+                        <div class="text-sm text-white/70">Monthly Searches Available</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-emerald-500/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-emerald-500/30">
+                            <span class="text-4xl font-black text-emerald-400">LOW</span>
+                        </div>
+                        <div class="text-sm text-white/70">Competition Level</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-amber-500/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-amber-500/30">
+                            <span class="text-4xl font-black text-amber-400">8</span>
+                        </div>
+                        <div class="text-sm text-white/70">Quick Win Keywords</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-uagc-red/30 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-uagc-red/40">
+                            <span class="text-4xl font-black">6</span>
+                        </div>
+                        <div class="text-sm text-white/70">Pages Need Content</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-3">
+                        <span class="text-2xl">✅</span> Success Metrics to Track
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-white/70">Organic Sessions</span>
+                                <span class="font-semibold">11,895 → <span class="text-emerald-400">↑ Growth</span></span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-white/70">Page 1 Rankings</span>
+                                <span class="font-semibold">Limited → <span class="text-emerald-400">20+ keywords</span></span>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-white/70">Average CTR</span>
+                                <span class="font-semibold">0.49% → <span class="text-emerald-400">1%+</span></span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-white/70">Engagement Rate</span>
+                                <span class="font-semibold">33.4% → <span class="text-emerald-400">50%+</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="gradient-animate text-white rounded-3xl p-10 text-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-black/20"></div>
+            <div class="relative z-10">
+                <h3 class="text-xl font-bold mb-2">UAGC Military SEO Strategy</h3>
+                <p class="text-white/70 text-sm">Data Sources: Google Search Console | Google Analytics 4 | Keywords Everywhere</p>
+                <p class="text-white/70 text-sm">Report Date: February 2026</p>
+            </div>
+        </footer>
+        
+    </div>
+    
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Reveal animations on scroll
+            const revealElements = document.querySelectorAll('.reveal');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            revealElements.forEach(el => observer.observe(el));
+            
+            // Stagger children
+            const staggerElements = document.querySelectorAll('.stagger-children');
+            staggerElements.forEach(el => el.classList.add('active'));
+            
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const headerOffset = 100;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Nav shadow on scroll
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 200) {
+                    nav.classList.add('shadow-2xl');
+                } else {
+                    nav.classList.remove('shadow-2xl');
+                }
+            });
+            
+            // Animate progress bars when visible
+            const progressBars = document.querySelectorAll('.progress-animate');
+            const progressObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.transform = 'scaleX(1)';
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            progressBars.forEach(bar => {
+                bar.style.transform = 'scaleX(0)';
+                bar.style.transition = 'transform 1.5s ease-out';
+                progressObserver.observe(bar);
+            });
+        });
+    </script>
+</body>
+</html>
